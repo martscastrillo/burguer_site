@@ -1,5 +1,92 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	&__bigbox {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		&--img {
+			width: 100px;
+			@media all and (min-width: 768px) {
+				width: 120px;
+			}
+		}
+	}
+	&__menue {
+		color: $color-main;
+		font-family: $font-title;
+		text-transform: uppercase;
+		font-size: 30px;
+		margin-left: 40px;
+		margin-top: 20px;
+    display: flex;
+    gap: 20px;
+		@media all and (min-width: 768px) {
+			font-size: 50px;
+		}
+    :hover {
+      color: $color-second;
+    }
+	}
+	&__menu {
+		background-color: $color-main;
+		width: 300px;
+		height: 100vh;
+		position: fixed;
+		margin: -2rem;
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 100;
+		&--p {
+			color: white;
+			text-transform: uppercase;
+			font-size: 30px;
+			transform: translate(70px);
+			:hover {
+				color: $color-second;
+			}
+		}
+
+		&--img {
+			width: 100px;
+			margin-top: 30px;
+
+			@media all and (min-width: 768px) {
+				width: 120px;
+			}
+		}
+		&--nav {
+			&--listelement {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				margin-top: 20px;
+				gap: 20px;
+				color: white;
+				font-family: $font-title;
+				text-transform: uppercase;
+				font-size: 40px;
+				text-align: center;
+				:hover {
+					color: $color-second;
+				}
+				@media all and (min-width: 768px) {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+}
+h1 {
+	color: $color-main;
+	font-family: $font-title;
+	text-transform: uppercase;
+	font-size: 45px;
+	@media all and (min-width: 768px) {
+		font-size: 70px;
+	}
 }

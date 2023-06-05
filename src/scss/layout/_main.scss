@@ -1,0 +1,78 @@
+.main {
+	color: white;
+	&__superdiv {
+		&--box {
+			height: 200px;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			background-image: fixed;
+			background-position: center;
+			background-size: 100%;
+			background-image: url("../images/pexels-valeria-boltneva-1639557.jpg");
+		}
+		&--p {
+			padding-top: 2rem;
+			text-align: center;
+			margin-right: min(10%);
+			margin-left: min(10%);
+			justify-content: center;
+			@media all and (min-width: 768px) {
+				margin-right: min(20%);
+				margin-left: min(20%);
+			}
+		}
+	}
+	&__menu {
+		padding: 2rem;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		&--h2 {
+			color: $color-main;
+			font-family: $font-title;
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: 400;
+            @media all and (min-width: 768px) {
+                font-size: 60px;
+            }
+		}
+	}
+}
+.burguerlist {
+	margin-top: 2rem;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 900px;
+	gap: 22px;
+
+	&__element {
+		border: 1px solid $color-second;
+		display: flex;
+		flex-direction: column;
+		padding: 12px;
+		gap: 22px;
+		max-width: 420px;
+		&--h3 {
+			font-family: $font-title;
+			color: $color-second;
+			text-transform: uppercase;
+			font-size: 20px;
+            @media all and (min-width: 768px) {
+                font-size: 30px;
+            }
+		}
+		&--pvp {
+			font-family: $font-title;
+			color: $color-main;
+			font-size: 20px;
+            @media all and (min-width: 768px) {
+                font-size: 30px;
+            }
+		}
+      
+	}
+}
