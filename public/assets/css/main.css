@@ -65,7 +65,8 @@ body {
       color: white;
       text-transform: uppercase;
       font-size: 30px;
-      transform: translate(70px); }
+      transform: translate(70px);
+      padding: 10px; }
       .header__menu--p :hover {
         color: #ee6cee; }
     .header__menu--img {
