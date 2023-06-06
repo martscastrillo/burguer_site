@@ -93,6 +93,9 @@ body {
       @media all and (min-width: 768px) {
         .header__menu--nav--listelement {
           font-size: 50px; } }
+      .header__menu--nav--listelement a {
+        color: white;
+        text-decoration: none; }
 
 h1 {
   color: #F7B42F;
@@ -216,12 +219,28 @@ h1 {
 .fa-shrimp {
   color: #f8885c; }
 
-.page__footer {
+.footer {
   width: 100vw;
   padding: 1rem;
-  color: #999;
+  color: white;
   background-color: #F7B42F;
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px; }
+  .footer__h3 {
+    text-transform: uppercase; }
+  .footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px; }
+    .footer__list--link {
+      color: white; }
+      .footer__list--link :hover {
+        color: #ee6cee; }
 
 .main__list {
   padding-left: 2rem;
