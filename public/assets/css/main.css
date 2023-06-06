@@ -30,6 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
     gap: 20px; }
     .header__bigbox--img {
       width: 100px; }
@@ -41,13 +42,14 @@ body {
     font-family: "Karantina", cursive;
     text-transform: uppercase;
     font-size: 30px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 20px;
     display: flex;
     gap: 20px; }
     @media all and (min-width: 768px) {
       .header__menue {
-        font-size: 50px; } }
+        font-size: 50px;
+        margin-left: 40px; } }
     .header__menue :hover {
       color: #ee6cee; }
   .header__menu {
@@ -60,15 +62,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 100; }
+    z-index: 100;
+    transform: translateX(-100%); }
     .header__menu--p {
       color: white;
       text-transform: uppercase;
       font-size: 30px;
       transform: translate(70px);
-      padding: 10px; }
-      .header__menu--p :hover {
-        color: #ee6cee; }
+      padding: 10px;
+      font-weight: 700; }
     .header__menu--img {
       width: 100px;
       margin-top: 30px; }
@@ -107,10 +109,9 @@ h1 {
     height: 200px;
     background-repeat: no-repeat;
     overflow: hidden;
-    background-image: fixed;
     background-position: center;
     background-size: 100%;
-    background-image: url("../images/pexels-valeria-boltneva-1639557.jpg"); }
+    background-image: url("../images/burguer_0006.png"); }
   .main__superdiv--p {
     padding-top: 2rem;
     text-align: center;
@@ -135,6 +136,31 @@ h1 {
       @media all and (min-width: 768px) {
         .main__menu--h2 {
           font-size: 60px; } }
+  .main__alergenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main__alergenos--title {
+      color: #F7B42F;
+      font-family: "Karantina", cursive;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 400; }
+      @media all and (min-width: 768px) {
+        .main__alergenos--title {
+          font-size: 60px; } }
+    .main__alergenos--list {
+      list-style: none;
+      display: flex;
+      margin: 20px;
+      font-size: 16px;
+      gap: 12px; }
+      @media all and (min-width: 768px) {
+        .main__alergenos--list {
+          font-size: 20px;
+          gap: 30px;
+          margin: 30px; } }
 
 .burguerlist {
   margin-top: 2rem;
@@ -162,24 +188,43 @@ h1 {
     .burguerlist__element--pvp {
       font-family: "Karantina", cursive;
       color: #F7B42F;
-      font-size: 20px; }
+      font-size: 20px;
+      text-transform: uppercase; }
       @media all and (min-width: 768px) {
         .burguerlist__element--pvp {
           font-size: 30px; } }
+    .burguerlist__element--span {
+      font-size: 18px;
+      display: flex;
+      gap: 5px; }
+      @media all and (min-width: 768px) {
+        .burguerlist__element--span {
+          font-size: 20px; } }
+
+.fa-wheat-awn {
+  color: #d7b677; }
+
+.fa-leaf {
+  color: #6bce50; }
+
+.fa-egg {
+  color: #fde8bf; }
+
+.fa-cow {
+  color: #f48244; }
+
+.fa-shrimp {
+  color: #f8885c; }
 
 .page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100vw;
   padding: 1rem;
-  color: #999; }
+  color: #999;
+  background-color: #F7B42F;
+  margin-top: 20px; }
 
 .main__list {
   padding-left: 2rem;
   padding-bottom: 20px; }
-
-.collapsed {
-  display: none; }
 
 /*# sourceMappingURL=main.css.map */

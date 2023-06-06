@@ -6,6 +6,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	margin-top: 20px;
 		gap: 20px;
 		&--img {
 			width: 100px;
@@ -19,16 +20,19 @@
 		font-family: $font-title;
 		text-transform: uppercase;
 		font-size: 30px;
-		margin-left: 40px;
+		margin-left: 20px;
 		margin-top: 20px;
-    display: flex;
-    gap: 20px;
+		display: flex;
+		gap: 20px;
 		@media all and (min-width: 768px) {
 			font-size: 50px;
+			margin-left: 40px;
 		}
-    :hover {
-      color: $color-second;
-    }
+		:hover {
+			color: $color-second;
+	
+		}
+		
 	}
 	&__menu {
 		background-color: $color-main;
@@ -41,15 +45,14 @@
 		flex-direction: column;
 		align-items: center;
 		z-index: 100;
+		transform: translateX(-100%);
 		&--p {
 			color: white;
 			text-transform: uppercase;
 			font-size: 30px;
 			transform: translate(70px);
-      padding: 10px;
-      :hover {
-        color: $color-second;
-      }
+			padding: 10px;
+			font-weight: 700;
 		}
 
 		&--img {
@@ -74,6 +77,7 @@
 				text-align: center;
 				:hover {
 					color: $color-second;
+				
 				}
 				@media all and (min-width: 768px) {
 					font-size: 50px;
