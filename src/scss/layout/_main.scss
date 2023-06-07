@@ -114,11 +114,14 @@
 }
 
 .arrow {
-	width: 100vw;
+	
 	display: flex;
 	justify-content: center;
 	padding: 30px;
 	margin-top: 10px;
+	position: fixed;
+	transform: translateY(350px);
+	right: 10px;
 	&__div {
 		@include centerColumn();
 		width: 37px;
