@@ -36,6 +36,7 @@
 	}
 	&__alergenos {
 		@include centerColumn();
+		margin-bottom: 1rem;
 		&--title {
 			color: $color-main;
 			@include titleFontUpper();
@@ -61,7 +62,7 @@
 }
 .burguerlist {
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -80,7 +81,7 @@
 			@include titleFontUpper();
 			font-size: 30px;
 		}
-		
+
 		&--pvp {
 			color: $color-main;
 			@include titleFontUpper();
@@ -100,10 +101,10 @@
 	text-align: center;
 }
 .fa-wheat-awn {
-	color:$color-wheat;
+	color: $color-wheat;
 }
 .fa-leaf {
-	color:$color-leaf;
+	color: $color-leaf;
 }
 .fa-egg {
 	color: $color-egg;
@@ -112,5 +113,34 @@
 	color: $color-cow;
 }
 .fa-shrimp {
-	color:$color-shrimp;
+	color: $color-shrimp;
+}
+
+.arrow {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	margin-top: 10px;
+	&__div {
+		@include centerColumn();
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+		background-color: $color-second;
+		animation: bounce 2s ease infinite;
+		@media all and (min-width: 768px) {
+			width: 45px;
+			height: 45px;
+		}
+		&--link {
+			padding: 20px;
+		}
+	}
+}
+
+@keyframes bounce {
+	50% {
+		transform: translateY(-30px);
+	}
 }

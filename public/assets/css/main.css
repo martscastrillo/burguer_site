@@ -37,7 +37,7 @@ body {
         font-size: 50px;
         margin-left: 40px; } }
     .header__menue :hover {
-      color: #ee6cee; }
+      color: #EE6CEE; }
   .header__menu {
     background-color: #F7B42F;
     width: 300px;
@@ -76,7 +76,7 @@ body {
       font-size: 40px;
       text-align: center; }
       .header__menu--nav--listelement :hover {
-        color: #ee6cee; }
+        color: #EE6CEE; }
       @media screen and (min-width: 480px) {
         .header__menu--nav--listelement {
           font-size: 50px; } }
@@ -133,7 +133,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 1rem; }
     .main__alergenos--title {
       color: #F7B42F;
       font-family: "Karantina", cursive;
@@ -157,7 +158,7 @@ h1 {
 
 .burguerlist {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -165,14 +166,14 @@ h1 {
   max-width: 900px;
   gap: 22px; }
   .burguerlist__element {
-    border: 1px solid #ee6cee;
+    border: 1px solid #EE6CEE;
     display: flex;
     flex-direction: column;
     padding: 12px;
     gap: 22px;
     max-width: 380px; }
     .burguerlist__element--h3 {
-      color: #ee6cee;
+      color: #EE6CEE;
       font-family: "Karantina", cursive;
       text-transform: uppercase;
       font-size: 30px; }
@@ -206,6 +207,33 @@ h1 {
 
 .fa-shrimp {
   color: #f8885c; }
+
+.arrow {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 10px; }
+  .arrow__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #EE6CEE;
+    animation: bounce 2s ease infinite; }
+    @media all and (min-width: 768px) {
+      .arrow__div {
+        width: 45px;
+        height: 45px; } }
+    .arrow__div--link {
+      padding: 20px; }
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-30px); } }
 
 footer {
   width: 100vw;
@@ -255,7 +283,7 @@ footer {
       color: white;
       font-size: 22px; }
       .footer__list--link :hover {
-        color: #ee6cee; }
+        color: #EE6CEE; }
       @media screen and (min-width: 480px) {
         .footer__list--link {
           font-size: 26px; } }
