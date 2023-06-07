@@ -207,31 +207,67 @@ h1 {
 .fa-shrimp {
   color: #f8885c; }
 
-.footer {
+footer {
   width: 100vw;
-  padding: 1rem;
+  padding: 2rem;
   color: white;
-  background-color: #F7B42F;
+  background-color: #F7B42F; }
+
+.footer {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px; }
-  .footer__h3 {
-    font-family: "Karantina", cursive;
-    text-transform: uppercase;
-    font-size: 30px; }
+  gap: 20px; }
+  @media screen and (min-width: 480px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-around; } }
+  .footer__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px; }
+    .footer__div--h3 {
+      font-family: "Karantina", cursive;
+      text-transform: uppercase;
+      font-size: 30px;
+      width: 110px; }
+      @media screen and (min-width: 480px) {
+        .footer__div--h3 {
+          font-size: 40px;
+          width: 150px; } }
+    .footer__div--logo {
+      width: 100px; }
+    .footer__div span {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px; }
   .footer__list {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 10px; }
     .footer__list--link {
-      color: white; }
+      color: white;
+      font-size: 22px; }
       .footer__list--link :hover {
         color: #ee6cee; }
+      @media screen and (min-width: 480px) {
+        .footer__list--link {
+          font-size: 26px; } }
+    @media screen and (min-width: 480px) {
+      .footer__list {
+        gap: 20px; } }
   .footer__copyright {
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: center;
+    margin-top: 40px; }
+    @media screen and (min-width: 480px) {
+      .footer__copyright {
+        font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */

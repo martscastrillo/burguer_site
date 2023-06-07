@@ -18,7 +18,6 @@ const close = () => {
 }
 const hoverin = () => js_cross.style.color='rgb(238, 108, 238)';
 const hoverout = ()  => js_cross.style.color='white'
-    
 
 js_menu.addEventListener("click", open);
 js_bars.addEventListener("click", open);
