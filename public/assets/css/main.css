@@ -201,7 +201,11 @@ h1 {
           font-size: 20px; } }
 
 .extratext {
-  text-align: center; }
+  text-align: center;
+  max-width: 500px; }
+  @media screen and (min-width: 480px) {
+    .extratext {
+      max-width: 800px; } }
 
 .fa-wheat-awn {
   color: #d7b677; }
@@ -306,5 +310,8 @@ footer {
     @media screen and (min-width: 480px) {
       .footer__copyright {
         font-size: 16px; } }
+
+.collapsed {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

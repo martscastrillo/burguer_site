@@ -99,6 +99,11 @@
 }
 .extratext {
 	text-align: center;
+	max-width: 500px;
+	@media screen and (min-width: 480px) {
+	
+		max-width: 800px;
+	}
 }
 .fa-wheat-awn {
 	color: $color-wheat;
