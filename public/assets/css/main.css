@@ -39,9 +39,8 @@ body {
     gap: 20px; }
     @media screen and (min-width: 480px) {
       .header__menue {
-        font-size: 50px;
         padding: 0.5rem 3rem 0.5rem 1rem;
-        width: 160px; } }
+        width: 120px; } }
     .header__menue :hover {
       color: #F7B42F; }
     .header__menue--p {
