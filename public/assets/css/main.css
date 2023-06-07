@@ -124,6 +124,11 @@ h1 {
       .main__superdiv--p {
         margin-right: 20%;
         margin-left: 20%; } }
+    .main__superdiv--p span {
+      font-family: "Karantina", cursive;
+      text-transform: uppercase;
+      color: #F7B42F;
+      font-size: 16px; }
   .main__menu {
     padding: 2rem;
     display: flex;
