@@ -11,28 +11,26 @@
 		gap: 20px;
 		&--img {
 			width: 100px;
-			@media  screen and (min-width: 480px) {
+			@media screen and (min-width: 480px) {
 				width: 120px;
 			}
 		}
 	}
 	&__menue {
 		color: white;
-		@include titleFontUpper(); 
+		@include titleFontUpper();
 		background-color: $color-second;
 		font-size: 30px;
 		position: fixed;
-		top:0;
-		padding: 0.5rem ;
+		top: 0;
+		padding: 0.5rem;
 		display: flex;
 		gap: 20px;
-	
+
 		:hover {
 			color: $color-main;
 			cursor: pointer;
 		}
-	
-		
 	}
 	&__menu {
 		background-color: $color-main;
@@ -47,9 +45,9 @@
 		transform: translateX(-100%);
 		&--p {
 			color: white;
-			@include titleFontUpper(); 
+			@include titleFontUpper();
 			font-size: 30px;
-			transform: translateX(90px)translateY(-20px);
+			transform: translateX(90px) translateY(-20px);
 			padding: 10px;
 			font-weight: 700;
 		}
@@ -57,7 +55,7 @@
 		&--img {
 			width: 100px;
 			margin-top: 30px;
-			@media  screen and (min-width: 480px) {
+			@media screen and (min-width: 480px) {
 				width: 120px;
 			}
 		}
@@ -69,19 +67,19 @@
 				margin-top: 20px;
 				gap: 20px;
 				color: white;
-				@include titleFontUpper(); 
+				@include titleFontUpper();
 				font-size: 40px;
 				text-align: center;
 				:hover {
 					color: $color-second;
 					cursor: pointer;
 				}
-				@media  screen and (min-width: 480px) {
+				@media screen and (min-width: 480px) {
 					font-size: 50px;
 				}
-				a{
-					color:white;
-					text-decoration:none;
+				a {
+					color: white;
+					text-decoration: none;
 				}
 			}
 		}
@@ -89,10 +87,10 @@
 }
 h1 {
 	color: $color-main;
-	@include titleFontUpper(); 
+	@include titleFontUpper();
 	font-size: 45px;
 	width: 160px;
-	@media  screen and (min-width: 480px) {
+	@media screen and (min-width: 480px) {
 		font-size: 70px;
 		width: 260px;
 	}
