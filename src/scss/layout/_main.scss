@@ -23,7 +23,6 @@
 	}
 	&__menu {
 		padding: 2rem;
-
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -31,9 +30,9 @@
 			color: $color-main;
 			font-family: $font-title;
 			text-transform: uppercase;
-			font-size: 30px;
+			font-size: 50px;
 			font-weight: 400;
-            @media all and (min-width: 768px) {
+			@media  screen and (min-width: 480px) {
                 font-size: 60px;
             }
 		}
@@ -47,9 +46,9 @@
 			color: $color-main;
 			font-family: $font-title;
 			text-transform: uppercase;
-			font-size: 30px;
+			font-size: 50px;
 			font-weight: 400;
-            @media all and (min-width: 768px) {
+            @media  screen and (min-width: 480px) {
                 font-size: 60px;
             }
 		}
@@ -59,7 +58,7 @@
 			margin: 20px;
 			font-size: 16px;
 			gap: 12px;
-			@media all and (min-width: 768px) {
+			@media  screen and (min-width: 480px) {
 				font-size: 20px;
 				gap: 30px;
 				margin: 30px;
@@ -69,6 +68,7 @@
 }
 .burguerlist {
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -82,13 +82,13 @@
 		flex-direction: column;
 		padding: 12px;
 		gap: 22px;
-		max-width: 420px;
+		max-width: 380px;
 		&--h3 {
 			font-family: $font-title;
 			color: $color-second;
 			text-transform: uppercase;
 			font-size: 20px;
-            @media all and (min-width: 768px) {
+			@media  screen and (min-width: 480px) {
                 font-size: 30px;
             }
 		}
@@ -97,7 +97,7 @@
 			color: $color-main;
 			font-size: 20px;
 			text-transform: uppercase;
-            @media all and (min-width: 768px) {
+            @media  screen and (min-width: 480px) {
                 font-size: 30px;
             }
 		}
@@ -105,7 +105,7 @@
 			font-size: 18px;
            display: flex;
 		   gap: 5px;
-		   @media all and (min-width: 768px) {
+		   @media  screen and (min-width: 480px) {
 			font-size: 20px;
 		}
 		}

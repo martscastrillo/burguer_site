@@ -10,7 +10,7 @@
 		gap: 20px;
 		&--img {
 			width: 100px;
-			@media all and (min-width: 768px) {
+			@media  screen and (min-width: 480px) {
 				width: 120px;
 			}
 		}
@@ -24,7 +24,7 @@
 		margin-top: 20px;
 		display: flex;
 		gap: 20px;
-		@media all and (min-width: 768px) {
+		@media  screen and (min-width: 480px) {
 			font-size: 50px;
 			margin-left: 40px;
 		}
@@ -59,7 +59,7 @@
 			width: 100px;
 			margin-top: 30px;
 
-			@media all and (min-width: 768px) {
+			@media  screen and (min-width: 480px) {
 				width: 120px;
 			}
 		}
@@ -79,7 +79,7 @@
 					color: $color-second;
 				
 				}
-				@media all and (min-width: 768px) {
+				@media  screen and (min-width: 480px) {
 					font-size: 50px;
 				}
 				a{
@@ -96,7 +96,10 @@ h1 {
 	font-family: $font-title;
 	text-transform: uppercase;
 	font-size: 45px;
-	@media all and (min-width: 768px) {
+	width: 160px;
+	@media  screen and (min-width: 480px) {
 		font-size: 70px;
+		width: 260px;
+
 	}
 }
