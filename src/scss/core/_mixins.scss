@@ -1,0 +1,10 @@
+@mixin centerColumn() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+@mixin titleFontUpper(){
+    font-family: $font-title;
+    text-transform: uppercase;
+}
