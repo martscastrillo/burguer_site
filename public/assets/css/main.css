@@ -222,8 +222,11 @@ h1 {
   padding: 30px;
   margin-top: 10px;
   position: fixed;
-  transform: translateY(350px);
+  bottom: 250px;
   right: 10px; }
+  @media screen and (min-width: 480px) {
+    .arrow {
+      bottom: 350px; } }
   .arrow__div {
     display: flex;
     justify-content: center;
@@ -234,7 +237,7 @@ h1 {
     border-radius: 50%;
     background-color: #EE6CEE;
     animation: bounce 2s ease infinite; }
-    @media all and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
       .arrow__div {
         width: 45px;
         height: 45px; } }
