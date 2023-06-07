@@ -1,8 +1,9 @@
 .header {
 	display: flex;
 	flex-direction: column;
-	padding: 2rem;
+
 	&__bigbox {
+		padding: 2rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -20,28 +21,17 @@
 		@include titleFontUpper(); 
 		background-color: $color-second;
 		font-size: 30px;
-		padding: 0.5rem 0.5rem 0.5rem 2rem;
-		width: 80px;
 		position: fixed;
-		transform: translateY(120px);
-		margin-left: -2rem;
-		margin-top: 20px;
+		top:0;
+		padding: 0.5rem ;
 		display: flex;
 		gap: 20px;
-		@media  screen and (min-width: 480px) {
-			padding: 0.5rem 3rem 0.5rem 1rem;
-			width: 120px;
-		
-		}
+	
 		:hover {
 			color: $color-main;
+			cursor: pointer;
 		}
-		&--p{
-			display: none;
-			@media  screen and (min-width: 480px) {
-				display:block;
-			}
-		}
+	
 		
 	}
 	&__menu {
@@ -49,7 +39,6 @@
 		width: 300px;
 		height: 100vh;
 		position: fixed;
-		margin: -2rem;
 		padding: 2rem;
 		display: flex;
 		flex-direction: column;
@@ -60,7 +49,7 @@
 			color: white;
 			@include titleFontUpper(); 
 			font-size: 30px;
-			transform: translate(70px);
+			transform: translateX(90px)translateY(-20px);
 			padding: 10px;
 			font-weight: 700;
 		}
@@ -85,6 +74,7 @@
 				text-align: center;
 				:hover {
 					color: $color-second;
+					cursor: pointer;
 				}
 				@media  screen and (min-width: 480px) {
 					font-size: 50px;
