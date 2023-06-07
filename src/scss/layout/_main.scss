@@ -120,11 +120,8 @@
 	padding: 30px;
 	margin-top: 10px;
 	position: fixed;
-	bottom:250px;
+	bottom:60px;
 	right: 10px;
-	@media  screen and (min-width: 480px) {
-		bottom:350px;
-	}
 	&__div {
 		@include centerColumn();
 		width: 37px;

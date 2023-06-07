@@ -222,11 +222,8 @@ h1 {
   padding: 30px;
   margin-top: 10px;
   position: fixed;
-  bottom: 250px;
+  bottom: 60px;
   right: 10px; }
-  @media screen and (min-width: 480px) {
-    .arrow {
-      bottom: 350px; } }
   .arrow__div {
     display: flex;
     justify-content: center;
